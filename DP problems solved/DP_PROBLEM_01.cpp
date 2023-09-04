@@ -1,6 +1,6 @@
 
 //? Leetcode 1239 
-//? Maximum length of a concatenatedstring with unique characters
+//? Maximum length of a concatenated string with unique characters
 
 #include<bits/stdc++.h>
 using namespace std;

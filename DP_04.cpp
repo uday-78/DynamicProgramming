@@ -92,17 +92,17 @@ using namespace std;
 int maximumNonAdjacentSum(int n , vector<int>&nums){
      
 
-   return getAnsSpaceOptimisation(n,nums);
+  // return getAnsSpaceOptimisation(n,nums);
    
     //  vector<int>dp(n,-1);
    //return getAnsTabulation(n-1,nums,dp);
    // return getAnsMemoization(n-1,nums,dp);
-   // return getAnsRecursion(n-1,nums);
+    return getAnsRecursion(n-1,nums);
 }
 
 int main(){
 
-vector<int>nums {2,1,4,9};
+vector<int>nums {2,7,9,3,1};
 
  int n = nums.size();
 

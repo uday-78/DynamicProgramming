@@ -108,7 +108,7 @@ using namespace std;
 
 int main(){
 
-    vector<vector<int> > grid{{5,9,6},{11,5,2}};
+    vector<vector<int> > grid{{0,0},{0,1}};
 
     cout<<"The minimum path sum is "<<minSumPath(grid);
     

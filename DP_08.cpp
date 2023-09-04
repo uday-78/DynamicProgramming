@@ -24,7 +24,6 @@ int getAnsRecursion(int row , int col  ,int totalRow , int totalCol ,vector<vect
      if(row<0 or col<0) return 0;
 
 
-
     int goUp = 0 , goRight = 0;
 
      if(isSafe(row-1,col,mat,totalRow,totalCol)){
@@ -37,7 +36,7 @@ int getAnsRecursion(int row , int col  ,int totalRow , int totalCol ,vector<vect
           goRight = getAnsRecursion(row,col-1,totalRow,totalCol,mat);
      }
 
-     return  (goRight+goUp)%MOD;
+     return  (goRight+goUp);
  }
 
 
@@ -131,7 +130,7 @@ int getAnsRecursion(int row , int col  ,int totalRow , int totalCol ,vector<vect
 
 
 
-     // return getAnsRecursion(m-1,n-1,m,n,mat);
+     return getAnsRecursion(m-1,n-1,m,n,mat);
 
     //vector<vector<int>>dp(m,vector<int>(n,-1));
 
@@ -139,13 +138,13 @@ int getAnsRecursion(int row , int col  ,int totalRow , int totalCol ,vector<vect
 
    // return getAnsTabulation(m,n,dp,mat);
 
-    return getAnsSpaceOptimisation(m,n,mat)%MOD;
+    //return getAnsSpaceOptimisation(m,n,mat)%MOD;
    
   }
 
 int main(){
 
-    vector<vector<int>>mat = {{0,0,0},{0,-1,0},{0,0,0}};
+    vector<vector<int>>mat = {{0,0},{0,1}};
    
     int m = mat.size();
     int n = mat[0].size();

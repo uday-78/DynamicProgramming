@@ -63,6 +63,16 @@ using namespace std;
    }
 
    int getAnsTabulation(int n ,vector<vector<int>>&triangle,vector<vector<int>>&dp){
+
+    /*
+        Here in the tabulation code we are running loop in col because in the base
+        case what we are doing is the moment we reach the last row then we can land
+        at any of the one column and that will be our ans
+
+        And in case of fixed starting point and variable starting point always start
+        from the fixed starting point
+    
+    */
        
        for(int col=0; col<n; col++){
           dp[n-1][col] = triangle[n-1][col];
